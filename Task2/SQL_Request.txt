@@ -1,0 +1,4 @@
+SELECT id_author, author
+FROM library_by_max
+GROUP BY id_author
+HAVING COUNT(id_author) < 7
